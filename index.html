@@ -1,0 +1,235 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- nav bar start -->
+    <nav class="bg-white w-full z-40 ">
+        <div class="mx-10 md:mx-32 pt-10 p-2 lg:static flex justify-between items-center sm:relative">
+            <div class="lg:hidden" onclick="navBar()">
+                <div class="mb-0.5 w-9 h-2 rounded-full bg-blue-400"></div>
+                <div class="mb-0.5 w-9 h-2 rounded-full bg-blue-400"></div>
+                <div class="mb-0.5 w-9 h-2 rounded-full bg-blue-400"></div>
+            </div>
+            <div id="boxNav" class="
+                flex flex-col fixed -left-80 duration-700 bottom-0 bg-blue-400 rounded-md h-screen p-4 z-50 
+                lg:static lg:flex-row lg:rounded-none lg:h-auto lg:p-0 lg:bg-white
+                md:flex-col md:bottom-0
+                sm:flex-col">
+                <a class="text-center text-3xl text-blue-400 mr-4 text-center font-bold md:hidden sm:hidden hidden lg:block"
+                    href="">OrganisasiGweh</a>
+                <a href="#hero" onclick="slideFix()" class="mx-4 my-2 lg:my-0">Home</a>
+                <a href="#profil" onclick="slideFix()" class="mx-4 my-2 lg:my-0">Profile</a>
+                <a href="#pengurus" onclick="slideFix()" class="mx-4 my-2 lg:my-0">Pengurus</a>
+                <a href="#komentar" onclick="slideFix()" class="mx-4 my-2 lg:my-0">Komentar</a>
+            </div>
+            <div class="rounded-full h-12 w-12 bg-blue-400"></div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- hero section start -->
+    <section id="#hero"
+        class="min-h-screen pt-32 mx-10 sm:mx-20 justify-center flex flex-col md:flex-row md:justify-center md:flex-col md:mx-32 md:items-start lg:justify-between lg:flex-row lg:items-center">
+        <div class="flex-col flex max-w-md lg:max-w-lg">
+            <h1 class="text-5xl sm:text-6xl font-bold ">Hi Alif Mahendra</h1>
+            <p>selamat datang di website.com, jadilah bagian dari oraganisasi kami, <span class="text-blue-400">lihat
+                    kegiatan dan aktivitas dari kami</span>
+            </p>
+            <div class="flex mt-3">
+                <a href="" class="rounded-full px-3 py-2 bg-blue-400 text-white">profile organisasi kami</a>
+                <a href="" class="border border-blue-400 rounded-full ml-2 px-3 py-2">telusuri</a>
+            </div>
+        </div>
+        <div class="w-full flex mt-10 justify-end md:w-full md:mt-10">
+            <img src="img/org.jpg" alt="" class="w-full">
+        </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- profile organisasi start -->
+    <section id="profil" class="pt-40 flex flex-col">
+        <div class="bg-blue-400 text-center px-10 relative flex flex-col items-center py-24">
+            <div class=" h-full w-full absolute mx-auto -top-20 flex justify-center">
+                <div class="h-40 w-40 bg-blue-500 rounded-full border-2 border-black"></div>
+            </div>
+            <h1 class="font-bold text-3xl">Organisasi Kami</h1>
+            <p class="font-semibold">jl. sencored rt.04 rw.05 kec.sencored kel.sencored</p>
+        </div>
+    </section>
+    <!-- profile organisasi end -->
+
+
+    <!-- pengurus org start -->
+    <section id="pengurus" class="mx-10 sm:mx-20 md:mx-32 flex flex-col mt-20">
+        <h1 class="font-bold text-3xl">Pengurus Organisasi</h1>
+        <p class="text-sm md:text-base lg:text-base">profile dari pengurus organisasi teratas</p>
+        <div class="flex flex-col md:flex-col lg:flex-row lg:justify-center mt-5">
+
+            <!-- box profile -->
+            <div class="flex p-5 rounded-xl mx-2 bg-blue-400 mt-5 justify-center">
+                <div class="mr-3">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full"></div>
+                </div>
+                <div class="flex flex-col max-w-sm">
+                    <h1 class="font-bold text-xl">Joko Ngawi</h1>
+                    <p class="text-sm">jl. sencored rt.04 rw.05 kec.sencored kel.sencored</p>
+
+                    <!-- instagram logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-instagram" class="mr-1"></ion-icon>
+                        <span class="text-sm">@jokongawi_aselole</span>
+                    </div>
+
+                    <!-- facebook logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-facebook" class="mr-1"></ion-icon>
+                        <span class="text-sm">@jokongawi_icikiwir</span>
+                    </div>
+
+                    <!-- whatsapp logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-whatsapp" class="mr-1"></ion-icon>
+                        <span class="text-sm">+62 88226457475</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box profile -->
+            <div class="flex p-5 rounded-xl mx-2 bg-blue-400 mt-5 justify-center">
+                <div class="mr-3">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full"></div>
+                </div>
+                <div class="flex flex-col max-w-sm">
+                    <h1 class="font-bold text-xl">Farhan Kebab</h1>
+                    <p class="text-sm">jl. sencored rt.04 rw.05 kec.sencored kel.sencored</p>
+
+                    <!-- instagram logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-instagram" class="mr-1"></ion-icon>
+                        <span class="text-sm">@farhan_gokil</span>
+                    </div>
+
+                    <!-- facebook logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-facebook" class="mr-1"></ion-icon>
+                        <span class="text-sm">@farhan_kece</span>
+                    </div>
+
+                    <!-- whatsapp logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-whatsapp" class="mr-1"></ion-icon>
+                        <span class="text-sm">+62 81232484246</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box profile -->
+            <div class="flex p-5 rounded-xl mx-2 bg-blue-400 mt-5 justify-center">
+                <div class="mr-3">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full"></div>
+                </div>
+                <div class="flex flex-col max-w-sm">
+                    <h1 class="font-bold text-xl">Kepin Volvo</h1>
+                    <p class="text-sm">jl. sencored rt.04 rw.05 kec.sencored kel.sencored</p>
+
+                    <!-- instagram logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-instagram" class="mr-1"></ion-icon>
+                        <span class="text-sm">@manjat_trukbilek</span>
+                    </div>
+
+                    <!-- facebook logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-facebook" class="mr-1"></ion-icon>
+                        <span class="text-sm">@mandalika_racing</span>
+                    </div>
+
+                    <!-- whatsapp logo -->
+                    <div class="rounded-full px-2 py-1 text-white flex w-full bg-blue-500 items-center mt-2">
+                        <ion-icon name="logo-whatsapp" class="mr-1"></ion-icon>
+                        <span class="text-sm">+62 81211343046</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pengurus org end -->
+
+    <!-- komentar pengunjung start -->
+    <section id="komentar" class="py-8 mt-10 bg-blue-400">
+        <div class="mx-10 flex flex-col sm:mx-20 md:mx-32">
+            <h1 class="font-bold text-3xl">Komentar pengunjung</h1>
+            <p class="text-sm md:text-base lg:text-base">profile dari pengurus organisasi teratas</p>
+            <form action="" method="post" class="w-full flex mt-4 items-stretch justify-between">
+                <input type="text" name="" id=""
+                    class="px-4 py-1 bg-blue-500 rounded-full text-white w-full mr-2 lg:border-b-2 border-b-white lg:bg-blue-400 lg:rounded-none lg:border-r-2 border-r-white"
+                    value="Berikan komentar">
+                <button type="submit"
+                    class="px-4 py-1 rounded-full border-2 border-blue-500 bg-white lg:rounded">Kirim</button>
+            </form>
+            <div class="flex flex-col mt-10">
+
+                <!-- komentar box -->
+                <div class="mt-5 flex">
+                    <div class="h-20 w-20">
+                        <div class="rounded-full w-20 h-20 bg-blue-500"></div>
+                    </div>
+                    <div class="flex flex-col ml-3 w-full">
+                        <h1 class="text-xl font-bold">Aku Cewek, Sumpah</h1>
+                        <p>wih organisasi keren, jadi pengen join kesitu, hehehe</p>
+                        <p class="mt-4">15 mei 2022</p>
+                    </div>
+                </div>
+
+                <!-- komentar box -->
+                <div class="mt-5 flex">
+                    <div class="h-20 w-20">
+                        <div class="rounded-full w-20 h-20 bg-blue-500"></div>
+                    </div>
+                    <div class="flex flex-col ml-3 w-full">
+                        <h1 class="text-xl font-bold">Dhani Makaroni</h1>
+                        <p>aku sedih cok spurs kalah sama MU 2 - 0, #aiamsayur</p>
+                        <p class="mt-4">10 oktober 2022</p>
+                    </div>
+                </div>
+
+                <!-- komentar box -->
+                <div class="mt-5 flex">
+                    <div class="h-20 w-20">
+                        <div class="rounded-full w-20 h-20 bg-blue-500"></div>
+                    </div>
+                    <div class="flex flex-col ml-3 w-full">
+                        <h1 class="text-xl font-bold">Fauzan Kecing</h1>
+                        <p>gwe yang punya ayang baru bilek, pasti luwh iri, gwej yang pacar baru jalur bulbas bilek.</p>
+                        <p class="mt-4">11 oktober 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- komentar pengunjung end -->
+
+    <!-- javascript start -->
+    <script>
+        function navBar() {
+            var boxNav = document.getElementById("boxNav");
+            boxNav.classList.remove("-left-80");
+            boxNav.classList.add("left-0");
+        }
+        function slideFix() {
+            var boxNav = document.getElementById("boxNav");
+            boxNav.classList.remove("left-0");
+            boxNav.classList.add("-left-80")
+        }
+    </script>
+    <!-- javascript end -->
+</body>
+
+</html>
